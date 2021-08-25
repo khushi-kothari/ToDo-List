@@ -1,33 +1,45 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="todoList.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/337c20ac16.js" crossorigin="anonymous"></script> 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> <!--dancing font-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <!--jQuery-->
-    <title>Document</title>
-</head>
-<body> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="todoList.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/337c20ac16.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!--dancing font-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!--jQuery-->
+    <title>Todo List</title>
+  </head>
+  <body>
     <div class="container">
-        <div class="bg">
-        <h2> To Do List </h2>
+      <div class="bg">
+        <h2>To Do List</h2>
         <div class="flex-box">
-            <form onsubmit="return false">
-                <input type="text" class="todoInput" id="todoInput">
-                <button class="button" id="button" type="button"> 
-                    <i class="fas fa-plus-square"></i>
-                </button>
-            </form>
+          <form onsubmit="return false">
+            <input type="text" class="todoInput" id="todoInput" />
+            <button class="button" id="button" type="button">
+              <i class="fas fa-plus-square"></i>
+            </button>
+          </form>
         </div>
+      </div>
+      <div id="list">
+        <ul class="listContainer" , id="listContainer"></ul>
+      </div>
     </div>
-        <div id = "list">
-        <ul class="listContainer", id="listContainer">
-        </ul>
-    </div>
-</div>
 
-    <script src="todoList.js"> </script>
-</body>
+    <script src="todoList.js"></script>
+  </body>
 </html>
